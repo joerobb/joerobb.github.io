@@ -16,6 +16,11 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <script>
+function eventualRedirect(redirectTo, timeoutPeriod) {
+	setTimeout("location.href = redirectTo;",timeoutPeriod);
+}
+</script>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -65,10 +70,10 @@
     <div class="row" id="projects">
       <h5 class="headline twelve">projects</h5>
       <div class="boxes">
-      <a href="https://joerobb.github.io/sass/" onclick="return true" title="sassproject" id="sass" class="project"></a>
+      <a href="https://joerobb.github.io/sass/" onclick="JavaScript:eventualRedirect(redirectTo='https://joerobb.github.io/sass/', timeoutPeriod='1500')"> title="sassproject" id="sass" class="project"></a>
       <a href="https://joerobb.github.io/dashboard/" onclick="return true" title="dashboardproject" id="dashboard" class="project"></a>
       <a href="https://joerobb.github.io/wheel-of-fortune/" onclick="return true" title="wheelproject" id="wheel" class="project"></a>
-      <a href="https://joerobb.github.io/svg/" onclick="return true" title="svgproject" id="svg" class="project"></a>  
+      <a href="https://joerobb.github.io/svg/" onclick="return true" title="svgproject" id="svg" class="project"></a>
     </div>
    </div>
 
