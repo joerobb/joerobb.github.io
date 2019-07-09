@@ -279,7 +279,9 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   text-align: center;}
 
-
+.number {
+  color: #000000;
+}
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
