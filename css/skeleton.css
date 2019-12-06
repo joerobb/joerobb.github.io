@@ -141,8 +141,13 @@ margin-left: 20px;
 }
 
 li {
-padding: 1rem;
+padding-left: 1rem;
 margin-right: 0;
+}
+
+ul.bignav li {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .introduction {
