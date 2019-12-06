@@ -140,6 +140,15 @@ margin-left: 20px;
   display: none;
 }
 
+li {
+padding: 1rem;
+margin-right: 0;
+}
+
+.introduction {
+color: #C0C0C0;
+}
+
 .nav-tgl {
   display: inline-block;
   cursor: pointer;
@@ -226,14 +235,14 @@ margin-left: 20px;
 }
 
 .about {
-  background: url('../images/background.jpg') no-repeat top center ;
+  background: url('https://images.unsplash.com/photo-1510511498717-4326639c999c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80') no-repeat top center ;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 36%;
 }
 
 .typewrite {
-  color: rgb(13, 104, 133);
+  color: #fff;
 }
 
 .introduction {
@@ -567,7 +576,7 @@ there.
 /* Larger than mobile */
 @media (min-width: 400px) {
   .about {
-    background: url('../images/background.jpg') no-repeat top center ;
+    background: url('https://images.unsplash.com/photo-1510511498717-4326639c999c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80') no-repeat top center ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 225px;
@@ -583,7 +592,7 @@ there.
 
 @media (min-width: 470px) {
   .about {
-    background: url('../images/background.jpg') no-repeat top center ;
+    background: url('https://images.unsplash.com/photo-1510511498717-4326639c999c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80') no-repeat top center ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 250px;
@@ -616,7 +625,7 @@ there.
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
   .about {
-    background: url('../images/background.jpg') no-repeat top center ;
+    background: url('https://images.unsplash.com/photo-1510511498717-4326639c999c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80') no-repeat top center ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 290px;
@@ -657,7 +666,7 @@ there.
 
 @media (min-width: 650px) {
   .about {
-    background: url('../images/background.jpg') no-repeat top center ;
+    background: url('https://images.unsplash.com/photo-1510511498717-4326639c999c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80') no-repeat top center ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 290px;
@@ -709,7 +718,7 @@ there.
   }
 
   .about {
-    background: url('../images/background.jpg') no-repeat top center ;
+    background: url('https://images.unsplash.com/photo-1510511498717-4326639c999c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80') no-repeat top center ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 310px;
@@ -745,7 +754,7 @@ there.
 
 @media (min-width: 800px) {
   .about {
-    background: url('../images/background.jpg') no-repeat top center ;
+    background: url('https://images.unsplash.com/photo-1510511498717-4326639c999c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80') no-repeat top center ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 340px;
@@ -772,7 +781,7 @@ there.
 
 @media (min-width: 900px) {
   .about {
-    background: url('../images/background.jpg') no-repeat top center ;
+    background: url('https://images.unsplash.com/photo-1510511498717-4326639c999c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80') no-repeat top center ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 375px;
@@ -808,7 +817,7 @@ there.
 /* Larger than desktop */
 @media (min-width: 1000px) {
   .about {
-    background: url('../images/background.jpg') no-repeat top center ;
+    background: url('https://images.unsplash.com/photo-1510511498717-4326639c999c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80') no-repeat top center ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 430px;
@@ -841,7 +850,7 @@ there.
 }
 @media (min-width: 1100px) {
   .about {
-    background: url('../images/background.jpg') no-repeat top center ;
+    background: url('https://images.unsplash.com/photo-1510511498717-4326639c999c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80') no-repeat top center ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 460px;
