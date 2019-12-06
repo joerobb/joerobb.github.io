@@ -72,7 +72,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30% 30%;
-  color: rgba(13, 104, 133, .90);
+  color: rgba(224, 48, 29, .90);
 }
 
 #wheel::after {
@@ -101,6 +101,30 @@
 
 #sass::after {
   content: 'web style guide \A \A SASS driven web style guide \A using a mobile first approach'
+}
+
+#netherby {
+  background-image: url(https://image.flaticon.com/icons/svg/263/263115.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30% 30%;
+  color: rgba(224, 48, 29, .90);
+}
+
+#netherby::after {
+  content: 'netherby enterprises \A \A Property Renovation company \A based in Cumbria UK'
+}
+
+#atlas {
+  background-image: url(https://image.flaticon.com/icons/svg/1639/1639271.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30% 30%;
+  color: rgba(224, 48, 29, .90);
+}
+
+#atlas::after {
+  content: 'atlas sheds \A \A Animated logo for \A Merseyside shed company'
 }
 
 #wrapper {
