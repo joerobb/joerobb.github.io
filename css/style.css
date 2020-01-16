@@ -1,0 +1,905 @@
+/* line 2, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+.centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 9, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+[class^="btn--"], .img--avatar, .img--work, .img--atlas, .nav {
+  text-align: center;
+}
+
+/* line 23, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+.img--frame, .img--avatar, .img--logo {
+  display: block;
+  margin: auto;
+}
+
+/* line 29, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+.nav__item {
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0;
+}
+
+/* line 37, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+.nav__item a {
+  border-radius: 0.4em;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+  padding: .8em;
+  display: block;
+}
+
+/* line 47, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+.nav__item a:hover {
+  color: #fff;
+  background-color: #33ffcc;
+}
+
+/* line 53, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+.headline--secondary {
+  color: #808080;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+/* line 59, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+.headline--primary {
+  color: #33ffcc;
+  font-size: em(28px);
+  font-weight: 700;
+}
+
+/* line 66, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+.link {
+  color: #61CAED;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* line 73, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+.blockquote {
+  color: #808080;
+  font-size: 27px;
+  padding: 0 0 0 5%;
+  border-right: 5px;
+  border-left: 10px solid #33ffcc;
+  border-radius: 2%;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* line 85, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+.typewriter {
+  color: #4d4d4d;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 100;
+}
+
+/* line 93, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+.form__input {
+  display: block;
+  width: 95%;
+  padding: 1em;
+  border: none;
+  border-bottom: 6px solid #33ffcc;
+  font-size: em(16px);
+  font-weight: 700;
+}
+
+/* line 104, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+.srt, .form__label--hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 117, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+[class^="btn--"] {
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: em(14px);
+  font-weight: 700;
+  transition: opacity 1s;
+  display: block;
+  width: 100%;
+}
+
+/* line 128, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+:hover[class^="btn--"] {
+  opacity: .5;
+  cursor: pointer;
+}
+
+/* line 132, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+:active[class^="btn--"] {
+  opacity: .33;
+}
+
+/* line 138, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_extends.scss */
+[class^="grid__col--"] {
+  padding: 15px 10px;
+  border: 0;
+  border-radius: 5px;
+  color: #808080;
+  font-size: em(14px);
+  font-weight: 400;
+  transition: opacity 1s;
+  width: 100%;
+}
+
+/* line 50, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.btn--default {
+  background-color: #61CAED;
+}
+
+/* line 50, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.btn--success {
+  background-color: #3CD170;
+}
+
+/* line 50, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.btn--error {
+  background-color: #F52613;
+}
+
+/* line 50, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.btn--warning {
+  background-color: #E74B08;
+}
+
+/* line 50, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.btn--info {
+  background-color: #812DBC;
+}
+
+/* line 8, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 16, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 26, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 45, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 57, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 66, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 75, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/* line 82, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 91, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 98, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 106, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 114, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 122, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 130, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 137, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 145, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 149, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 157, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 164, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 172, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 179, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 188, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 195, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 214, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 227, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/* line 237, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 249, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 260, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 268, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 278, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/* line 284, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+* input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 300, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 310, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 322, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 330, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 340, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 348, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 356, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 364, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 369, ../../../../../../../../../../../../../Code/jrd/scss/base/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 1, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 5, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+body {
+  min-height: 100vh;
+}
+
+/* line 9, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+.container {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+/* line 16, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+ul {
+  list-style: none;
+}
+
+/* line 20, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+p {
+  color: #808080;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* line 27, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+h3 {
+  color: #4d4d4d;
+}
+
+/* line 34, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+#overlay {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  cursor: pointer;
+  /* Add a pointer on hover */
+}
+
+/* line 50, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+.nav__menu {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: 330px) and (max-width: 768px) {
+  /* line 54, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+  .TabNav {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 54, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+  .TabNav {
+    display: block;
+  }
+}
+
+/* line 65, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+.menu__toggler {
+  margin: auto 1rem auto auto;
+  z-index: 999;
+  height: 30px;
+  width: 30px;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* line 75, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+.menu__toggler span,
+.menu__toggler span::before,
+.menu__toggler span::after {
+  position: absolute;
+  content: '';
+  width: 28px;
+  height: 2.5px;
+  background: #61CAED;
+  border-radius: 20px;
+  transition: 500ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* line 87, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+.menu__toggler span::before {
+  top: -8px;
+}
+
+/* line 91, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+.menu__toggler span::after {
+  top: 8px;
+}
+
+/* line 95, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+.menu__toggler.active > span {
+  background: transparent;
+}
+
+/* line 99, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+.menu__toggler.active > span::before,
+.menu__toggler.active > span::after {
+  background: #33ffcc;
+  top: 0px;
+}
+
+/* line 105, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+.menu__toggler.active > span::before {
+  transform: rotate(-225deg);
+}
+
+/* line 109, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+.menu__toggler.active > span::after {
+  transform: rotate(225deg);
+}
+
+@media (min-width: 769px) {
+  /* line 65, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+  .menu__toggler {
+    display: none;
+  }
+}
+
+/*
+ * SLIDING MENU PANEL
+ */
+/* line 120, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+.menu {
+  position: absolute;
+  left: -30%;
+  z-index: 998;
+  color: #61CAED;
+  background: #fff;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 120, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+  .menu {
+    width: 250px;
+    left: -250px;
+    padding: 50px;
+  }
+}
+
+/* line 137, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+.menu.active {
+  left: 0;
+}
+
+/* line 140, ../../../../../../../../../../../../../Code/jrd/scss/base/_base.scss */
+.menu p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* line 57, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.btn--default.theme__colors {
+  background-color: #61CAED;
+}
+
+/* line 57, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.btn--success.theme__colors {
+  background-color: #3CD170;
+}
+
+/* line 57, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.btn--error.theme__colors {
+  background-color: #F52613;
+}
+
+/* line 57, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.btn--warning.theme__colors {
+  background-color: #E74B08;
+}
+
+/* line 57, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.btn--info.theme__colors {
+  background-color: #812DBC;
+}
+
+/* line 5, ../../../../../../../../../../../../../Code/jrd/scss/modules/_buttons.scss */
+[class^="btn--"] {
+  margin-bottom: 1.33333em;
+}
+
+@media (min-width: 769px) {
+  /* line 65, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+  [class^="btn--"] + [class^="btn--"] {
+    margin-left: 15px;
+    @context;
+  }
+}
+
+/* line 37, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.form__input {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.125em;
+  margin-top: auto;
+}
+
+@media (min-width: 769px) {
+  /* line 2, ../../../../../../../../../../../../../Code/jrd/scss/modules/_forms.scss */
+  .form {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+/* line 37, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.grid__row {
+  display: block;
+  padding: .5em;
+}
+
+@media (min-width: 769px) {
+  /* line 37, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+  .grid__row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.9375em;
+    margin: auto;
+  }
+}
+
+/* line 37, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.grid__col {
+  margin-top: 0.75em;
+  margin-bottom: 0.625em;
+}
+
+/* line 57, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.grid__col--12.theme__colors {
+  background-color: #4dffd2;
+}
+
+/* line 57, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.grid__col--6.theme__colors {
+  background-color: #11a1c3;
+}
+
+/* line 57, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.grid__col--4.theme__colors {
+  background-color: #57D0EE;
+}
+
+/* line 57, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.grid__col--3.theme__colors {
+  background-color: #e0bdef;
+}
+
+/* line 57, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.grid__col--5.theme__colors {
+  background-color: #63cc82;
+}
+
+/* line 57, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.grid__col--7.theme__colors {
+  background-color: #e4757a;
+}
+
+/* line 57, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.grid__col--8.theme__colors {
+  background-color: #fd7856;
+}
+
+@media (min-width: 769px) {
+  /* line 23, ../../../../../../../../../../../../../Code/jrd/scss/modules/_grid.scss */
+  .grid__col--1 {
+    width: calc(1024px*calc(1/12));
+  }
+  /* line 23, ../../../../../../../../../../../../../Code/jrd/scss/modules/_grid.scss */
+  .grid__col--2 {
+    width: calc(1024px*calc(2/12));
+  }
+  /* line 23, ../../../../../../../../../../../../../Code/jrd/scss/modules/_grid.scss */
+  .grid__col--3 {
+    width: calc(1024px*calc(3/12));
+  }
+  /* line 23, ../../../../../../../../../../../../../Code/jrd/scss/modules/_grid.scss */
+  .grid__col--4 {
+    width: calc(1024px*calc(4/12));
+  }
+  /* line 23, ../../../../../../../../../../../../../Code/jrd/scss/modules/_grid.scss */
+  .grid__col--5 {
+    width: calc(1024px*calc(5/12));
+  }
+  /* line 23, ../../../../../../../../../../../../../Code/jrd/scss/modules/_grid.scss */
+  .grid__col--6 {
+    width: calc(1024px*calc(6/12));
+  }
+  /* line 23, ../../../../../../../../../../../../../Code/jrd/scss/modules/_grid.scss */
+  .grid__col--7 {
+    width: calc(1024px*calc(7/12));
+  }
+  /* line 23, ../../../../../../../../../../../../../Code/jrd/scss/modules/_grid.scss */
+  .grid__col--8 {
+    width: calc(1024px*calc(8/12));
+  }
+  /* line 23, ../../../../../../../../../../../../../Code/jrd/scss/modules/_grid.scss */
+  .grid__col--9 {
+    width: calc(1024px*calc(9/12));
+  }
+  /* line 23, ../../../../../../../../../../../../../Code/jrd/scss/modules/_grid.scss */
+  .grid__col--10 {
+    width: calc(1024px*calc(10/12));
+  }
+  /* line 23, ../../../../../../../../../../../../../Code/jrd/scss/modules/_grid.scss */
+  .grid__col--11 {
+    width: calc(1024px*calc(11/12));
+  }
+  /* line 23, ../../../../../../../../../../../../../Code/jrd/scss/modules/_grid.scss */
+  .grid__col--12 {
+    width: calc(1024px*calc(12/12));
+  }
+}
+
+/* line 30, ../../../../../../../../../../../../../Code/jrd/scss/modules/_grid.scss */
+[class^="grid__col--"] {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+@media (min-width: 769px) {
+  /* line 30, ../../../../../../../../../../../../../Code/jrd/scss/modules/_grid.scss */
+  [class^="grid__col--"] {
+    display: flex;
+    justify-content: spacearound;
+  }
+  /* line 65, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+  [class^="grid__col--"] + [class^="grid__col--"] {
+    margin-left: 20px;
+    @context;
+  }
+}
+
+/* line 42, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.img--frame {
+  border: 1px solid #b3b3b3;
+  padding: .5em;
+  width: 100%;
+  margin-top: 0.625em;
+}
+
+@media (min-width: 769px) {
+  /* line 42, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+  .img--frame {
+    width: 410px;
+    height: 200px;
+  }
+}
+
+/* line 42, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.img--avatar {
+  width: 199px;
+  height: 199px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  /* line 42, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+  .img--logo {
+    float: left;
+    margin-left: 2.5em;
+  }
+}
+
+/* line 42, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.img--work {
+  width: 14.3125em;
+  height: 11.1875em;
+}
+
+/* line 38, ../../../../../../../../../../../../../Code/jrd/scss/modules/_images.scss */
+.svg {
+  margin-top: -60px;
+}
+
+/* line 42, ../../../../../../../../../../../../../Code/jrd/scss/modules/_images.scss */
+.img--atlas {
+  width: 18.0625em;
+  height: 11.1875em;
+}
+
+/* line 48, ../../../../../../../../../../../../../Code/jrd/scss/modules/_images.scss */
+.icon {
+  margin-left: 2em;
+  max-width: 3.125em;
+  max-height: 3.125em;
+}
+
+@media (min-width: 330px) and (max-width: 768px) {
+  /* line 48, ../../../../../../../../../../../../../Code/jrd/scss/modules/_images.scss */
+  .icon {
+    display: none;
+  }
+}
+
+/* line 3, ../../../../../../../../../../../../../Code/jrd/scss/modules/_navigation.scss */
+.nav {
+  padding: 1em 0;
+}
+
+/* line 9, ../../../../../../../../../../../../../Code/jrd/scss/modules/_navigation.scss */
+.nav__item a {
+  color: #4d4d4d;
+}
+
+@media (min-width: 769px) {
+  /* line 3, ../../../../../../../../../../../../../Code/jrd/scss/modules/_navigation.scss */
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* line 23, ../../../../../../../../../../../../../Code/jrd/scss/modules/_navigation.scss */
+.grid__col--9 nav {
+  margin: 0 5% 0 auto;
+}
+
+/* line 42, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.headline--primary {
+  margin-left: 1.25em;
+  margin-right: 2.5em;
+}
+
+/* line 42, ../../../../../../../../../../../../../Code/jrd/scss/utilities/_mixins.scss */
+.headline--secondary {
+  margin: 0;
+}
+
+@media (min-width: 330px) and (max-width: 768px) {
+  /* line 2, ../../../../../../../../../../../../../Code/jrd/scss/modules/_typography.scss */
+  .headline {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 330px) and (max-width: 768px) {
+  /* line 22, ../../../../../../../../../../../../../Code/jrd/scss/modules/_typography.scss */
+  .blockquote {
+    display: none;
+  }
+}
+
+/* line 33, ../../../../../../../../../../../../../Code/jrd/scss/modules/_typography.scss */
+.contact {
+  color: #61CAED;
+}
+
+/*# sourceMappingURL=style.css.map */

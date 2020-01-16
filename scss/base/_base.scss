@@ -1,0 +1,144 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+min-height: 100vh;
+}
+
+.container {
+  font-family: $font-family--primary;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 1.5em;
+	}
+
+ul {
+	list-style: none;
+}
+
+p {
+  color: $grey;
+  font-size: $font-size--medium;
+  font-weight: $font-weight--light;
+  letter-spacing: $letter-space;
+}
+
+h3 {
+	color: $grey-dark;
+}
+
+
+
+///overlay
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+
+//////////// MENU //////////////
+
+.nav__menu {
+	@include flexy(flex, row);
+}
+
+.TabNav {
+@include mq(small) {
+	display: none;
+}
+
+@include mq(medium) {
+	display: block;
+}
+
+}
+
+.menu__toggler {
+	margin: auto 1rem auto auto;
+  z-index: 999;
+  height: 30px;
+  width: 30px;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  span,
+  span::before,
+  span::after {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 2.5px;
+    background: $color-secondary;
+    border-radius: 20px;
+    transition: 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  span::before {
+    top: -8px;
+  }
+
+  span::after {
+    top: 8px;
+  }
+
+  &.active > span  {
+    background: transparent;
+  }
+
+  &.active > span::before,
+  &.active > span::after {
+    background: $color-primary;
+    top: 0px;
+  }
+
+  &.active > span::before  {
+    transform: rotate(-225deg);
+  }
+
+  &.active > span::after  {
+    transform: rotate(225deg);
+  }
+	@include mq(medium) {
+		display: none;
+	}
+}
+
+/*
+ * SLIDING MENU PANEL
+ */
+.menu {
+  position: absolute;
+  left: -30%;
+  z-index: 998;
+  color: $color-secondary;
+  background: $white;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
+  @media only screen and (max-width: 600px) {
+    width: 250px;
+    left: -250px;
+    padding: 50px;
+  }
+  &.active {
+    left: 0;
+  }
+  p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+}
