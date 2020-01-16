@@ -1,0 +1,35 @@
+
+.headline {
+  @include m(primary) {
+    @extend %headline-prim;
+    margin-left: em(20px);
+    margin-right: em(40px);
+  }
+  @include m(secondary) {
+    @extend %headline-sec;
+    margin: 0;
+  }
+  @include mq(small) {
+    @include center;
+  }
+}
+
+.link {
+  @extend %link;
+
+}
+
+.blockquote {
+  @extend %blockquote;
+  @include mq(small){
+    display:none;
+  }
+}
+
+.typewriter {
+  @extend %typewriter;
+}
+
+.contact {
+  color: $color-secondary;
+}

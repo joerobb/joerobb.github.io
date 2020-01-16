@@ -1,0 +1,20 @@
+
+.form {
+  @include e(label) {
+    @include m(hidden) {
+    @extend .srt;
+  }
+}
+  @include e(input) {
+    @extend %form-input;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: em(50px);
+    margin-top: auto;
+  }
+  @include mq(medium){
+    margin: auto;
+    width: 100%;
+	}
+
+}

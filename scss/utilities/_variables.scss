@@ -1,0 +1,74 @@
+//Colour
+$color-primary  : #33ffcc;
+$color-secondary: #61CAED;
+$white          : #fff;
+$grey           : #808080;
+$black          : #000000;
+
+
+//Colour Functions
+$grey-dark: darken($grey, 20%);
+
+//Font Stacks
+$stack-sans-serif : Helvetica, Arial, sans-serif;
+$stack-helvetica  : 'Helvetica Neue', $stack-sans-serif;
+
+//Break Points
+$brk-s: 330px;
+$brk-m: 768px;
+$brk-l: 1100px;
+
+//Asset Paths
+$path--rel: "../img";
+
+// Text
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+//Font Sizes
+$font-size--xlarge: 40px;
+$font-size--large: 27px;
+$font-size--medium: 18px;
+$font-size--small: 10px;
+
+//Font Weight
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+$font-weight--ultra-bold: 900;
+
+//Fonts
+$font-url--google: 'https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,400i,600,700,800,900';
+$font-family--primary: 'Helvetica Neue', Helvetica, sans-serif;
+
+// Border radius
+$br--default    : .4em;
+$br--round      : 50%;
+
+//Theme Colours
+$themes: (
+  'default': $color-secondary,
+  'success': #3CD170,
+  'error'  : #F52613,
+  'warning': #E74B08,
+  'info'   : #812DBC
+);
+
+$grid-colors: (
+	12: lighten($color-primary, 5%),
+	6: lighten(#0B677D, 15%),
+	4: #57D0EE,
+	3: lighten(#B96ADC, 20%),
+	5: #63cc82,
+	7: #e4757a,
+	8: #fd7856
+);
+
+//Grid
+
+$g-col-width: 65px;
+$g-gutter-width: 20px;
+$g-col-count: 12;
+$g-cont-max-w: 1050;

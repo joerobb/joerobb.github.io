@@ -1,131 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<head>
   <meta charset="utf-8">
   <title>Joseph Robb Digital</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/boxshadow.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-     <header class="header one column" id="about">
-       <h5>joseph<br>robb<br>digital</h5>
-     </header>
-     <ul class="bignav">
-       <li><a href="#projects"><h5>projects</h5></a></li>
-       <li><a href="#contact"><h5>contact</h5></a></li>
-     </ul>
+<body class="container">
+<div id="overlay" style="display: none; overflow-x: visible; overflow-y: visible; "></div>
+  <div class="grid__row">
+    <div class="grid__col--3 nav__menu">
+      <a class="link" href=""><h2>Joseph<br>Robb<br>Digital</h2></a>
+      <div class="menu__toggler" onclick="myFunction()"><span></span></div>
+    </div>
 
-       <div class="menu">
-    <button class="nav-tgl" type="button" aria-label="toggle menu">
-      <!-- this span just for the three dividers in the hamburger button--><span aria-hidden="true"></span>
-    </button>
-    <nav class="nav">
-    <ul class="options">
-      <li><a href="#about"><h5>about</h5></a></li>
-      <li><a href="#projects"><h5>projects</h5></a></li>
-      <li><a href="#contact"><h5>contact</h5></a></li>
-    </ul>
-    </nav>
+    <div class="grid__col--9">
+    <nav role="navigation">
+        <ul class="nav menu">
+          <li class="nav__item"><a href="#about">About</a></li>
+          <li class="nav__item"><a href="#services">Services</a></li>
+          <li class="nav__item"><a href="#work">Work</a></li>
+          <li class="nav__item"><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Tablet Nav -->
+          <ul class="nav TabNav">
+            <li class="nav__item"><a href="#about">About</a></li>
+            <li class="nav__item"><a href="#services">Services</a></li>
+            <li class="nav__item"><a href="#work">Work</a></li>
+            <li class="nav__item"><a href="#contact">Contact</a></li>
+          </ul>
+
+   </nav>
   </div>
-   </div>
-       <div class="row about">
-         <h5 class="introduction">Hi, my name is Joe. <br>I am a <a href="" class="typewrite" data-period="3000" data-type='[ "Front End Web Developer.", "Creative.", "Web Designer." ]'>
-           <span class="wrap"></span>
-            </a>
-        </h5>
+  </div>
+
+  <h1 id="app" class="typewriter"></h1>
+  <h4 id="about" class="headline--secondary">About</h4>
+  <div class="grid__row">
+    <div class="grid__col--8">
+      <div class="card">
+
+        <h1 class="headline--primary">Front End Web Developer Liverpool, UK</h1>
+        <p>Hey, my name is Joe. I am a freelance front end developer living in Liverpool. I offer high quality website design and development at very friendly costs. Please check out
+        <a class="link" href="#services">what I can do for you.</a> Or see what <a class="link" href="#work">I've been up to recently.</a></p>
+      </div>
+    </div>
+      <div class="grid__col--4">
+        <div class="card">
+        <blockquote class="blockquote">Got a project in mind? <br> <br><a class="list" href="mailto:robb_joe@hotmail.co.uk?Subject=Hey%20Joe"><img class="icon" src="images/send.svg" alt="Send Message Icon"></a></blockquote>
+
+      </div>
+      </div>
       </div>
 
-    <div class="row" id="projects">
-      <h5 class="headline twelve">projects</h5>
-      <div class="boxes">
-      <a href="http://netherbyenterprises.co.uk/" onclick="return true" title="renovation" id="netherby" class="project"></a>
-      <a href="https://joerobb.github.io/sass/" onclick="return true" title="sassproject" id="sass" class="project"></a>
-      <a href="https://joerobb.github.io/wheel-of-fortune/" onclick="return true" title="wheelproject" id="wheel" class="project"></a>
-      <a href="https://joerobb.github.io/dashboard/" onclick="return true" title="dashboardproject" id="dashboard" class="project"></a>
-      <a href="http://joerobb.github.io/Atlas-Logo-Animation/" onclick="return true" title="animation" id="atlas" class="project"></a>
-      <a href="https://joerobb.github.io/svg/" onclick="return true" title="svgproject" id="svg" class="project"></a>
-
+<h4 id="services" class="headline--secondary">Services</h4>
+  <div class="grid__row">
+    <div class="grid__col--4">
+      <div class="card">
+      <h2>Responsive Web Design</h2>
+      <h3>Look great, on every screen.</h3>
+      <img class="img--avatar" src="images/responsive.svg" alt="Responsive Web Design Icon">
     </div>
-   </div>
-
-
-
-   <div class="row">
-     <h5 id="contact" class="headline">contact</h5>
-    <ul class="contact">
-    <li><a href="mailto:robb_joe@hotmail.co.uk" title="email">
-     <svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-     width="50" height="50"
-     viewBox="0 0 50 50"
-   class="icon"><g class="icon" id="surface1"><path class="icon" style=" " d="M 0 7 L 0 43 L 50 43 L 50 7 Z M 2 9 L 48 9 L 48 11.53125 L 25 29.71875 L 2 11.53125 Z M 2 14.09375 L 24.375 31.78125 C 24.742188 32.074219 25.257813 32.074219 25.625 31.78125 L 48 14.09375 L 48 41 L 2 41 Z "></path></g></svg>
-    </a>
-   </li>
-  <li><a href="https://www.instagram.com" title="instagram">
-     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="icon"
-     width="50" height="50"
-     viewBox="0 0 50 50"
-     style=" fill:#000000;">    <path class="icon"  d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path></svg>
-  </a></li>
-  <li><a href="https://twitter.com/?lang=en-gb" title="twitter" class="icon">
-  <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg" width="50" height="50">
-  <path class="icon" d="
-    M 630, 425
-    A 195, 195 0 0 1 331, 600
-    A 142, 142 0 0 0 428, 570
-    A  70,  70 0 0 1 370, 523
-    A  70,  70 0 0 0 401, 521
-    A  70,  70 0 0 1 344, 455
-    A  70,  70 0 0 0 372, 460
-    A  70,  70 0 0 1 354, 370
-    A 195, 195 0 0 0 495, 442
-    A  67,  67 0 0 1 611, 380
-    A 117, 117 0 0 0 654, 363
-    A  65,  65 0 0 1 623, 401
-    A 117, 117 0 0 0 662, 390
-    A  65,  65 0 0 1 630, 425
-    Z"></path>
-
-</svg>
-</a></li>
-  <li>
-<h6 class="number">44 7977 196793</h6>
-</li>
-</ul>
-</div>
-<footer>
-<h6>Joseph Robb Digital © 2019</h6>
-</footer>
   </div>
-  <script type="text/javascript" src="app.js"></script>
+  <div class="grid__col--4">
+    <div class="card">
+      <h2>SEO</h2>
+      <h3>Be seen, with every search.</h3>
+      <img class="img--avatar" src="images/seo.svg" alt="Search Engine Optimisation Icon">
+    </div>
+  </div>
+      <div class="grid__col--4">
+        <div class="card">
+      <h2>One to one Support</h2>
+      <h3>Personal help, at every turn.</h3>
+      <img class="img--avatar svg" src="images/develop.svg" alt="One to one Icon">
+    </div>
+  </div>
+</div>
+  <h4 id="work" class="headline--secondary">Latest Work</h4>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="grid__row">
+    <div class="grid__col--4">
+      <div class="card">
+      <img class="img--work" src="images/wbc.png" alt="WBC Drawings Logo">
+      <h2>WBC Drawings, Wigan</h2>
+      <p>The team at WBC drawings wanted a website that looked professional but simple, to ensure customers could find the information they required.</p>
+      <a class="link" href="https://joerobb.github.io/wbc/"><h5>Visit Site</h5></a>
+    </div>
+  </div>
+  <div class="grid__col--4">
+  <div class="card">
+  <img class="img--work" src="images/house.svg" alt="Propert Development Logo">
+  <h2>Netherby Enterprises, Cumbria</h2>
+  <p>Property development company Netherby Enterprises needed a slick and accessible website.</p>
+  <a class="link" href="http://netherbyenterprises.co.uk/#"><h5>Visit Site</h5></a>
+</div>
+</div>
+  <div class="grid__col--4">
+    <div class="card">
+      <img class="img--atlas" src="images/atlas.png" alt="Atlas Sheds Logo">
+      <h2>Atlas Sheds, Liverpool</h2>
+      <p>The Atlas website was in need of flavour. The team wanted a loading animation and professional sales banners made from photoshop.</p>
+      <a class="link" href="https://joerobb.github.io/Atlas-Logo-Animation/"><h5>See Work</h5></a>
+    </div>
+  </div>
+</div>
+
+  <h4 id="contact" class="headline--secondary">Contact</h4>
+
+  <div class="grid__row">
+    <div class="grid__col--6">
+      <h3>Phone: </h3> <h2 class="contact">&nbsp 07977 196 793</h2>
+    </div>
+    <div class="grid__col--6">
+    <h3>Email: </h3><h2>&nbsp <a class="link" href="mailto:robb_joe@hotmail.co.uk?Subject=Hey%20Joe">robb_joe@hotmail.co.uk</a></h2>
+  </div>
+    </div>
+  </div>
+  <footer>
+    <h6>Joseph Robb Digital © 2020</h6>
+  </footer>
+
+  <!-- <h4 id="grid" class="headline--secondary">Grid System</h4> -->
+
+  <!-- <div class="grid__row">
+    <div class="grid__col--12 theme__colors">.grid__col--12</div>
+  </div>
+  <div class="grid__row">
+    <div class="grid__col--6 theme__colors">.grid__col--6</div>
+    <div class="grid__col--6 theme__colors">.grid__col--6</div>
+  </div>
+  <div class="grid__row">
+    <div class="grid__col--4 theme__colors">.grid__col--4</div>
+    <div class="grid__col--4 theme__colors">.grid__col--4</div>
+    <div class="grid__col--4 theme__colors">.grid__col--4</div>
+  </div>
+  <div class="grid__row">
+    <div class="grid__col--3 theme__colors">.grid__col--3</div>
+    <div class="grid__col--3 theme__colors">.grid__col--3</div>
+    <div class="grid__col--3 theme__colors">.grid__col--3</div>
+    <div class="grid__col--3 theme__colors">.grid__col--3</div>
+  </div>
+  <div class="grid__row">
+    <div class="grid__col--5 theme__colors">.grid__col--5</div>
+    <div class="grid__col--7 theme__colors">.grid__col--7</div>
+  </div>
+  <div class="grid__row">
+    <div class="grid__col--8 theme__colors">.grid__col--8</div>
+    <div class="grid__col--4 theme__colors">.grid__col--4</div>
+  </div>
+  <div class="grid__row">
+    <div class="grid__col--7 theme__colors centered">.centered .grid__col--7</div>
+  </div> -->
+
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
 </body>
+
 </html>
