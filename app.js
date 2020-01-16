@@ -1,17 +1,22 @@
-const app = document.getElementById('app');
+window.onload=function(){
 
-const typewriter = new Typewriter(app, {
-    loop: true
-});
+  const app = document.getElementById('app');
 
-typewriter.typeString('Oooooh.')
-    .pauseFor(1500)
-    .typeString(' That\'s a nice website.')
-    .pauseFor(1000)
-    .deleteChars(13)
-    .typeString(' <strong>really</strong> nice website.')
-    .pauseFor(20000)
-    .start();
+  const typewriter = new Typewriter(app, {
+      loop: true
+  });
+
+  typewriter.typeString('Oooooh.')
+      .pauseFor(1500)
+      .typeString(' That\'s a nice website.')
+      .pauseFor(1000)
+      .deleteChars(13)
+      .typeString(' <strong>really</strong> nice website.')
+      .pauseFor(20000)
+      .start();
+
+}
+
 
 
 //Toggle MENU
