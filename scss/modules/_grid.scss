@@ -3,17 +3,17 @@
 .grid {
   @include e(row) {
       display: block;
-  		padding: .5em;
+  		padding: .2em;
     @include mq(medium) {
       @include flexy(flex, row);
-      margin-bottom: em(15px);
+      margin-bottom: em(8px);
       margin:auto;
     }
   }
   @include e(col) {
     @include colours($grid-colors);
-    margin-top: em(12px);
-    margin-bottom: em(10px);
+    margin-top: em(8px);
+    margin-bottom: em(8px);
   }
   }
 
@@ -28,8 +28,8 @@
 
 
 [class^="grid__col--"] {
-    margin-top: em(12px);
-    margin-bottom: em(12px);
+    margin-top: em(8px);
+    margin-bottom: em(8px);
     @extend %col;
     @include mq(medium) {
     @include doubly(20px);

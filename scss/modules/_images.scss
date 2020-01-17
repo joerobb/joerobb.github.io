@@ -27,16 +27,22 @@
 			margin-left: em(40px);
 		}
 	}
-	@include m(work){
-		@extend %center-align;
-		width: em(229px);
-		height: em(179px);
-		}
+}
 
+.work {
+	width: em(229px);
+	height: em(179px);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.svgs {
+	margin-bottom: em(-30px);
 }
 
 .svg {
-	margin-top: -60px;
+	margin-top: em(-40px);
+	margin-bottom: em(20px);
 }
 
 .img--atlas {
@@ -54,18 +60,47 @@
 	}
 }
 
+///Atlas animation
 
+/* Keyframes */
 
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 
+@keyframes textGrow {
+    0% {
+        transform: scale(0.5);
+    }
+    70% {
+        transform: scale(1.05);
+    }
+}
 
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(1080deg);
+		}
+}
+/* Transitions */
 
+#atlas:hover .diamond {
+	animation: rotation 2s ease-out;
+  transform-origin: 50.5% 14.5%;
+ }
 
+#atlas:hover .text {  animation: textGrow 2s ease-in-out;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
 
-
-
-
-
-
-
-//.img--frame
-//.img--avatar
+#atlas:hover .outline {
+	stroke-dasharray: 485;
+	stroke-dashoffset: 485;
+	animation: offset 1.5s linear forwards;
+}

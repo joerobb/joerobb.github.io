@@ -87,9 +87,6 @@
 	font-size: $font-size--xlarge;
 	text-align: center;
 	font-weight: $font-weight--thin;
-	@include mq(small) {
-		margin-top: em(-50px);
-	}
 }
 
 //Forms
@@ -139,7 +136,7 @@
 
 //Col
 %col {
-	padding: 15px 10px;
+	padding: 7.5px 10px;
 	border: 0;
 	border-radius: 5px;
 	color: $grey;

@@ -28,6 +28,9 @@
 
 .typewriter {
   @extend %typewriter;
+  @include mq(small) {
+    margin-top: -40px;
+  }
 }
 
 .contact {

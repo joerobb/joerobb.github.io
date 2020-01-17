@@ -26,9 +26,18 @@ p {
 
 h3 {
 	color: $grey-dark;
+	margin: 0;
 }
 
+h1 {
+	margin-top: 0;
+}
 
+.plane {
+	@include mq(small) {
+		display: none;
+	}
+}
 
 ///overlay
 #overlay {
@@ -123,7 +132,7 @@ h3 {
   z-index: 998;
   color: $color-secondary;
   background: $white;
-  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
   width: 30%;
   height: 100%;
   display: flex;
