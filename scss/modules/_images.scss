@@ -104,3 +104,19 @@
 	stroke-dashoffset: 485;
 	animation: offset 1.5s linear forwards;
 }
+
+#atlas:active .diamond {
+	animation: rotation 2s ease-out;
+  transform-origin: 50.5% 14.5%;
+ }
+
+#atlas:active .text {  animation: textGrow 2s ease-in-out;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+#atlas:active .outline {
+	stroke-dasharray: 485;
+	stroke-dashoffset: 485;
+	animation: offset 1.5s linear forwards;
+}
